@@ -2,3 +2,21 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+.arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrowLeft {
+  cursor: pointer;
+}
+
+.arrowRight {
+  cursor: pointer;
+}
+
+.ng-fa-icon {
+  font-size: 2em;
+}

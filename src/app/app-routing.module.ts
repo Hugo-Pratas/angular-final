@@ -1,10 +1,12 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 import {HouseCatalogComponent} from "./pages/house-catalog/house-catalog.component";
+import {HouseDetailsComponent} from "./pages/house-details/house-details.component";
 
 const routes: Routes = [
-  {path: '', redirectTo: '/catalog', pathMatch: 'full'},
-  {path: 'catalog', component: HouseCatalogComponent},
+  {path: '', redirectTo: '/houses', pathMatch: 'full'},
+  {path: 'houses', component: HouseCatalogComponent},
+  {path: 'houses/:id_house', component: HouseDetailsComponent}
 
 ];
 
@@ -12,4 +14,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

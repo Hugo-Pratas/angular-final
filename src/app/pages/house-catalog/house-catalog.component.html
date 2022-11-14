@@ -1,11 +1,21 @@
 <div class="grid">
   <app-house
     *ngFor="let h of houses"
-    [image]="h.featured_photo"
-    [country]="h.country"
     [city]="h.city"
-    [rating]="h.rating"
+    [country]="h.country"
     [host_type]="h.host_type"
+    [id]="h.id"
+    [image]="h.featured_photo"
     [price]="h.price"
+    [rating]="h.rating"
   ></app-house>
+</div>
+
+<div class="arrows">
+  <div (click)="previousPage()" class="arrowLeft">
+    <fa-icon *ngIf="currentPage>1" [icon]="faChevronLeft"></fa-icon>
+  </div>
+  <div (click)="nextPage()" class="arrowRight">
+    <fa-icon *ngIf="currentPage<maxPage" [icon]="faChevronRight"></fa-icon>
+  </div>
 </div>

@@ -8,19 +8,18 @@ import {faStar} from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./house.component.scss']
 })
 export class HouseComponent {
-
-  faStar=faStar;
-  @Input() image="";
-  @Input() country="";
-  @Input() city="";
+  faStar = faStar;
+  @Input() id!: number;
+  @Input() image = "";
+  @Input() country = "";
+  @Input() city = "";
   @Input() rating!: number;
-  @Input() host_type= "";
+  @Input() host_type = "";
   @Input() price!: number;
 
 
-  constructor() { }
-
-
+  constructor() {
+  }
 
 
 }
