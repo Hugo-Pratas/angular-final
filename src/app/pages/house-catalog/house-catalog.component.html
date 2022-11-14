@@ -1,1 +1,11 @@
-<p>house-catalog works!</p>
+<div class="grid">
+  <app-house
+    *ngFor="let h of houses"
+    [image]="h.featured_photo"
+    [country]="h.country"
+    [city]="h.city"
+    [rating]="h.rating"
+    [host_type]="h.host_type"
+    [price]="h.price"
+  ></app-house>
+</div>

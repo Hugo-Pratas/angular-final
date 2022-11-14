@@ -11,7 +11,7 @@ export class NavBarComponent implements OnInit {
 
   faSearch = faSearch;
   logo = "../../../assets/logo_menu.svg";
-  //heart = heart_open;
+  favourite = "../../../assets/heart_open.svg";
 
   constructor() { }
 

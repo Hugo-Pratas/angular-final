@@ -12,7 +12,7 @@
 
   .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     max-width: 600px;
     margin: auto;
@@ -22,18 +22,25 @@
       text-align: center;
       align-content: center;
 
+      fa-icon{
+        font-size: 100%;
+      }
+
+      #button{
+        min-width: 25px;
+        width: 50%;
+      }
+
+      #home{
+        min-width: 50px;
+        width: 50%;
+      }
+
     }
 
     a {
       text-decoration: none;
       color: #adadad;
-
-      fa-icon{
-        font-size: 100%;
-      }
-      img{
-        width: 70%;
-      }
 
       &.active, &:hover {
         color: #00b0ed;

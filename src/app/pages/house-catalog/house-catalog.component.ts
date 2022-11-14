@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {BnbService} from "../../Services/bnb.service";
 
 @Component({
   selector: 'app-house-catalog',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./house-catalog.component.scss']
 })
 export class HouseCatalogComponent implements OnInit {
+  houses:  any;
 
-  constructor() { }
+  constructor(private _service: BnbService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void{
+    this._service.getHouses().subscribe(data =>{
+      // @ts-ignore
+      this.houses = <any>data.data;
+    })
   }
 
 }
