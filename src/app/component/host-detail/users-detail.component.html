@@ -1,0 +1,38 @@
+<div *ngIf="isHost" class="container">
+  <div class="header">
+    <img [src]="data.photo">
+    <div class="name">
+      <p>{{data.name}}</p>
+      <app-star-rating
+        [rating]="data.rating"
+        fontSize="calc(12px + 0.5vw)"
+      ></app-star-rating>
+    </div>
+  </div>
+  <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna
+    aliqua. At consectetur lorem donec massa sapien faucibus. In ornare quam viverra orci sagittis eu volutpat. Pharetra
+    sit amet aliquam id diam maecenas.</p>
+</div>
+
+<div *ngIf="!isHost" class="coments">
+  <div *ngFor="let d of data" class="container">
+    <div class="header">
+      <img [src]="d.photo">
+      <div class="name">
+        <p>{{d.name}}</p>
+        <p class="date">{{d.date}}</p>
+      </div>
+    </div>
+    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna
+      aliqua. At consectetur lorem donec massa sapien faucibus. In ornare quam viverra orci sagittis eu volutpat.
+      Pharetra
+      sit amet aliquam id diam maecenas.</p>
+  </div>
+</div>
+
+<div *ngIf="comentsIsempty">
+  <p class="description">Ainda não há comentários disponíveis. Seja o primeiro!</p>
+</div>
+

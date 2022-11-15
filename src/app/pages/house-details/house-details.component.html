@@ -22,7 +22,7 @@
   <app-commodities-and-rules [id]="data.id"></app-commodities-and-rules>
   <div class="host">
     <h6>Sobre o anfitrião</h6>
-    <app-host-detail [id]="data.id"></app-host-detail>
+    <app-host-detail [id]="data.id" [isHost]=true></app-host-detail>
   </div>
   <div class="galery">
     <h6>Galeria</h6>
@@ -30,7 +30,7 @@
   </div>
   <div class="coments">
     <h6>Comentários</h6>
-    <app-coments [id]="data.id"></app-coments>
+    <app-host-detail [id]="data.id" [isHost]=false></app-host-detail>
   </div>
 </div>
 

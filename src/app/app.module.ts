@@ -11,9 +11,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {HouseDetailsComponent} from './pages/house-details/house-details.component';
 import {StarRatingComponent} from './component/star-rating/star-rating.component';
 import {CommoditiesAndRulesComponent} from './component/commodities-and-rules/commodities-and-rules.component';
-import {HostDetailComponent} from './component/host-detail/host-detail.component';
+import {UsersDetailComponent} from './component/host-detail/users-detail.component';
 import {GalleryComponent} from './component/gallery/gallery.component';
-import {ComentsComponent} from './component/coments/coments.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +23,8 @@ import {ComentsComponent} from './component/coments/coments.component';
     HouseDetailsComponent,
     StarRatingComponent,
     CommoditiesAndRulesComponent,
-    HostDetailComponent,
+    UsersDetailComponent,
     GalleryComponent,
-    ComentsComponent
   ],
   imports: [
     BrowserModule,
