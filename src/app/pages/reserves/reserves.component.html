@@ -1,0 +1,33 @@
+<div class="header">
+  <h1>Bem-vindo(a)</h1>
+  <h2>Ao seu perfil</h2>
+</div>
+<div class="containerReserves">
+  <h2>As minhas reservas</h2>
+  <div class="grid">
+    <app-house *ngFor="let r of currentReserves"
+               [city]="r.city"
+               [country]="r.country"
+               [host_type]="r.time"
+               [id]="r.id"
+               [image]="r.featured_photo"
+               [price]="r.price"
+               [rating]="r.rating"
+    ></app-house>
+  </div>
+  <h2>Reservas passadas</h2>
+  <div class="grid">
+    <app-house *ngFor="let r of pastReserves"
+               [city]="r.city"
+               [country]="r.country"
+               [host_type]="r.time"
+               [id]="r.id"
+               [image]="r.featured_photo"
+               [price]="r.price"
+               [rating]="r.rating"
+    ></app-house>
+  </div>
+</div>
+
+
+

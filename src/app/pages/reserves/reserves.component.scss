@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+}
+
+.header {
+  h2 {
+    color: #919191;
+  }
+
+  margin-bottom: 2vh;
+}
+
+
+.containerReserves {
+  h2 {
+    margin-bottom: 0.5vh;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

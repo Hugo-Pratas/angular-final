@@ -1,7 +1,8 @@
 <div class="container">
-  <a [routerLink]="['/houses', id]">
-    <img [src]="image" alt="imagemCasa">
-  </a>
+  <app-image
+    [id]="id"
+    [src]="image"
+  ></app-image>
   <div class="text_box">
     <div class="header">
     <span class="title">

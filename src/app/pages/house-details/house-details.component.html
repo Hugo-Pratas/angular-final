@@ -14,7 +14,10 @@
       <p>{{data.city}}, {{data.country}}</p>
     </span>
   </div>
-  <div [ngStyle]="{'background-image': 'url(' + data.featured_photo + ')'}" class="image"></div>
+  <app-image
+    [id]="data.id"
+    [src]="data.featured_photo"
+  ></app-image>
   <div class="description">
     <p><strong>{{data.price}}€</strong> noite</p>
     <p class="text"> {{data.description}}</p>

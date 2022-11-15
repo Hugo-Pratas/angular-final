@@ -7,6 +7,7 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./house.component.scss']
 })
 export class HouseComponent {
+
   @Input() id!: number;
   @Input() image = "";
   @Input() country = "";
@@ -18,6 +19,4 @@ export class HouseComponent {
 
   constructor() {
   }
-
-
 }

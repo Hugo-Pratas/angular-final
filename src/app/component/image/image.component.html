@@ -1,0 +1,7 @@
+<div class="container">
+  <a [routerLink]="['/houses', id]">
+    <img [src]="src" alt="imagemCasa">
+  </a>
+  <fa-icon (click)="toggleFavorite()" [icon]="IconFav" class="coracao"></fa-icon>
+</div>
+
