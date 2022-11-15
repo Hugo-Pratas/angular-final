@@ -1,0 +1,26 @@
+img {
+  background-color: #004F63;
+}
+
+.container {
+  display: flex;
+
+  .block {
+    width: 10%;
+    aspect-ratio: 1/1;
+    display: flex;
+    margin: 1vw 1vw 1vw 0;
+    border-radius: 5px;
+
+    .image {
+      width: 60%;
+      height: 60%;
+      margin: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: invert(100%);
+    }
+  }
+
+
+}

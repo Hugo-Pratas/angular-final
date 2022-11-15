@@ -9,6 +9,9 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {HouseComponent} from './component/house/house.component';
 import {HttpClientModule} from '@angular/common/http';
 import {HouseDetailsComponent} from './pages/house-details/house-details.component';
+import {StarRatingComponent} from './component/star-rating/star-rating.component';
+import {CommoditiesAndRulesComponent} from './component/commodities-and-rules/commodities-and-rules.component';
+import {HostDetailComponent} from './component/host-detail/host-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import {HouseDetailsComponent} from './pages/house-details/house-details.compone
     HouseCatalogComponent,
     NavBarComponent,
     HouseComponent,
-    HouseDetailsComponent
+    HouseDetailsComponent,
+    StarRatingComponent,
+    CommoditiesAndRulesComponent,
+    HostDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=helvetica');
+
+.container {
+  width: 100%;
+
+  h1 {
+    font-size: calc(25px + 0.5vw);
+  }
+}
+
+.image {
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 2vh 0;
+}
+
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+
+  .dot {
+    font-size: 36px;
+    font-family: "JetBrains Mono Medium", serif;
+    color: #858585;
+  }
+
+  span {
+    padding-right: 5px;
+  }
+}
+
+.description {
+  p {
+    margin-bottom: 1.5vh;
+  }
+
+  .text {
+    font-size: calc(12px + 0.5vw);;
+  }
+}
+
+
+.host {
+  * {
+    margin: 1.5vh 0;
+  }
+}
+
+.galery {
+  h6 {
+    margin-top: 1.5vh;
+    margin-bottom: .5vh;
+  }
+}
+
+* {
+  font-size: calc(15px + 0.5vw);
+  margin: 0;
+  font-family: helvetica, serif;
+}

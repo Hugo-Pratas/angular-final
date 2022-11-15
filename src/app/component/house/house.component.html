@@ -9,10 +9,10 @@
             {{country}}, {{city}}
         </h1>
     </span>
-      <span class="start_rating">
-      <fa-icon [icon]="faStar"></fa-icon>
-      <p>{{rating}}</p>
-    </span>
+      <app-star-rating
+        [rating]=rating
+        fontSize="calc(12px + 0.4vw)"
+      ></app-star-rating>
     </div>
     <p class="host">Anfitrião {{host_type}}</p>
     <p class="price">
