@@ -9,9 +9,9 @@ import {faChevronLeft} from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./house-catalog.component.scss']
 })
 export class HouseCatalogComponent implements OnInit {
+  houses: any;
   maxPage!: number;
   currentPage = 1
-  houses: any;
   faChevronRight = faChevronRight;
   faChevronLeft = faChevronLeft;
 

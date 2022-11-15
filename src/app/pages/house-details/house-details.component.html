@@ -1,4 +1,3 @@
-<script src="house-details.component.ts"></script>
 <div class="container">
   <h1>{{data.title}}</h1>
   <div class="header">
@@ -27,6 +26,11 @@
   </div>
   <div class="galery">
     <h6>Galeria</h6>
+    <app-gallery [featured_photo]="data.featured_photo" [id]="id_house"></app-gallery>
+  </div>
+  <div class="coments">
+    <h6>Comentários</h6>
+    <app-coments [id]="data.id"></app-coments>
   </div>
 </div>
 

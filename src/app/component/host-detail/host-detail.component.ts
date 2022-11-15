@@ -18,7 +18,6 @@ export class HostDetailComponent implements OnInit {
     this._service.getHost(this.id).subscribe(data => {
       // @ts-ignore
       this.host = data;
-      console.log(this.host)
     })
   }
 

@@ -12,6 +12,8 @@ import {HouseDetailsComponent} from './pages/house-details/house-details.compone
 import {StarRatingComponent} from './component/star-rating/star-rating.component';
 import {CommoditiesAndRulesComponent} from './component/commodities-and-rules/commodities-and-rules.component';
 import {HostDetailComponent} from './component/host-detail/host-detail.component';
+import {GalleryComponent} from './component/gallery/gallery.component';
+import {ComentsComponent} from './component/coments/coments.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import {HostDetailComponent} from './component/host-detail/host-detail.component
     HouseDetailsComponent,
     StarRatingComponent,
     CommoditiesAndRulesComponent,
-    HostDetailComponent
+    HostDetailComponent,
+    GalleryComponent,
+    ComentsComponent
   ],
   imports: [
     BrowserModule,

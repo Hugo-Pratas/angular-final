@@ -28,4 +28,12 @@ export class BnbService {
     return this.http.get(BASE_URL + "/casas/" + house_id + "/host")
   }
 
+  getGallery(house_id: number) {
+    return this.http.get(BASE_URL + "/casas/" + house_id + "/photos")
+  }
+
+  getComents(house_id: number) {
+    return this.http.get(BASE_URL + "/casas/" + house_id + "/reviews")
+  }
+
 }

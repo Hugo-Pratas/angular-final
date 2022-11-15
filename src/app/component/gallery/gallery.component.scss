@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2vh;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 1.5/1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
