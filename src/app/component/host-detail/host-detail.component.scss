@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.5vw;
+
+  img {
+    max-width: 15vw;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 4vw;
+
+    p {
+      margin-bottom: 0.5vw;
+    }
+  }
+}
+
+.description {
+  font-size: calc(12px + 0.5vw);
+}

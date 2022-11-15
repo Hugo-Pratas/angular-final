@@ -1,7 +1,32 @@
 <script src="house-details.component.ts"></script>
-<div class="header">
+<div class="container">
   <h1>{{data.title}}</h1>
-  <p>estrela{{data.rating}}{{data.city}}{{data.country}}</p>
+  <div class="header">
+    <span>
+      <app-star-rating
+        [rating]="data.rating"
+        fontSize="calc(15px + 0.5vw)"
+      ></app-star-rating>
+    </span>
+    <span>
+      <p class="dot">&#183;</p>
+    </span>
+    <span>
+      <p>{{data.city}}, {{data.country}}</p>
+    </span>
+  </div>
+  <div [ngStyle]="{'background-image': 'url(' + data.featured_photo + ')'}" class="image"></div>
+  <div class="description">
+    <p><strong>{{data.price}}€</strong> noite</p>
+    <p class="text"> {{data.description}}</p>
+  </div>
+  <app-commodities-and-rules [id]="data.id"></app-commodities-and-rules>
+  <div class="host">
+    <h6>Sobre o anfitrião</h6>
+    <app-host-detail [id]="data.id"></app-host-detail>
+  </div>
+  <div class="galery">
+    <h6>Galeria</h6>
+  </div>
 </div>
-<div class="image">
-</div>
+

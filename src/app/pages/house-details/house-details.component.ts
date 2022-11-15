@@ -11,6 +11,7 @@ export class HouseDetailsComponent implements OnInit {
 
   id_house = 0
   data: any;
+  features!: string[];
 
   constructor(private route: ActivatedRoute, private _service: BnbService) {
   }
@@ -20,6 +21,7 @@ export class HouseDetailsComponent implements OnInit {
     this._service.getHouseDetails(this.id_house).subscribe(data => {
       this.data = data;
     })
+
   }
 
 }

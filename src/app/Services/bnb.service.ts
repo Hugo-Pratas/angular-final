@@ -20,4 +20,12 @@ export class BnbService {
     return this.http.get(BASE_URL + "/casas/" + id)
   }
 
+  getHouseFeatures(house_id: number) {
+    return this.http.get(BASE_URL + "/casas/" + house_id + "/features")
+  }
+
+  getHost(house_id: number) {
+    return this.http.get(BASE_URL + "/casas/" + house_id + "/host")
+  }
+
 }

@@ -1,0 +1,11 @@
+<div class="container">
+  <div *ngFor="let src of imagesSrc" [ngStyle]="{'background-color': '#004F63'}" class="block">
+    <div [ngStyle]="{'background-image': 'url(' + src + ')'}" class="image"></div>
+  </div>
+</div>
+<div class="container">
+  <div *ngFor="let src of greyImagesSrc" [ngStyle]="{'background-color': '#adadad'}" class="block">
+    <div [ngStyle]="{'background-image': 'url(' + src + ')'}" class="image"></div>
+  </div>
+</div>
+
