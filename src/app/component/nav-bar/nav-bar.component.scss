@@ -17,25 +17,24 @@
     max-width: 600px;
     margin: auto;
 
-    .item{
+    .item {
       flex: 1;
       text-align: center;
       align-content: center;
 
-      fa-icon{
-        font-size: 100%;
+      fa-icon {
+        font-size: 200%;
       }
 
-      #button{
+      #button {
         min-width: 25px;
         width: 50%;
       }
 
-      #home{
+      #home {
         min-width: 50px;
         width: 50%;
       }
-
     }
 
     a {

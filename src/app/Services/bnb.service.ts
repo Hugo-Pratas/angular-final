@@ -9,7 +9,7 @@ const BASE_URL = "https://m9-frontend.upskill.appx.pt/upbnb";
 })
 export class BnbService {
 
-  favorites: number[] = []
+  favorites: number[] = [1, 5, 7, 10, 12, 50, 13]
 
   constructor(private http: HttpClient) {
   }
@@ -58,5 +58,14 @@ export class BnbService {
       this.favorites.splice(indice, 1)
     }
   }
+
+  getFavorites() {
+    return this.favorites;
+  }
+
+  getHousesByIds(ids: number[]) {
+    return this.http.get(BASE_URL + "/casas?ids=" + ids.join(","))
+  }
+
 
 }

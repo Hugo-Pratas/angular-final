@@ -1,4 +1,4 @@
-<div class="container">
+<div *ngIf="!isFavoriteLayout" class="container">
   <app-image
     [id]="id"
     [src]="image"
@@ -15,9 +15,37 @@
         fontSize="calc(12px + 0.4vw)"
       ></app-star-rating>
     </div>
+    <p *ngIf="host_type.length>0" class="host">Anfitrião {{host_type}}</p>
+    <p *ngIf="data.length>0" class="host">{{data}}</p>
+    <p class="price">
+      <strong>{{price}}€</strong> noite
+    </p>
+  </div>
+</div>
+
+<div *ngIf="isFavoriteLayout" class="container_fav">
+  <div class="div_width">
+    <app-image
+      [id]="id"
+      [src]="image"
+    ></app-image>
+  </div>
+
+  <div class="text_box text_box_fav">
+    <div class="header">
+    <span class="title">
+        <h2>
+            {{city}}
+        </h2>
+    </span>
+    </div>
     <p class="host">Anfitrião {{host_type}}</p>
     <p class="price">
       <strong>{{price}}€</strong> noite
     </p>
+    <app-star-rating
+      [rating]="rating"
+      fontSize="calc(12px + 0.4vw)"
+    ></app-star-rating>
   </div>
 </div>

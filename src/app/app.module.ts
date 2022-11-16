@@ -15,6 +15,7 @@ import {UsersDetailComponent} from './component/host-detail/users-detail.compone
 import {GalleryComponent} from './component/gallery/gallery.component';
 import {ImageComponent} from './component/image/image.component';
 import {ReservesComponent} from './pages/reserves/reserves.component';
+import {FavouritesComponent} from './pages/favourites/favourites.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {ReservesComponent} from './pages/reserves/reserves.component';
     GalleryComponent,
     ImageComponent,
     ReservesComponent,
+    FavouritesComponent,
   ],
   imports: [
     BrowserModule,

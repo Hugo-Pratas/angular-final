@@ -8,9 +8,10 @@
     <app-house *ngFor="let r of currentReserves"
                [city]="r.city"
                [country]="r.country"
-               [host_type]="r.time"
+               [data]="r.time"
                [id]="r.id"
                [image]="r.featured_photo"
+               [isFavoriteLayout]="false"
                [price]="r.price"
                [rating]="r.rating"
     ></app-house>
@@ -20,9 +21,10 @@
     <app-house *ngFor="let r of pastReserves"
                [city]="r.city"
                [country]="r.country"
-               [host_type]="r.time"
+               [data]="r.time"
                [id]="r.id"
                [image]="r.featured_photo"
+               [isFavoriteLayout]="false"
                [price]="r.price"
                [rating]="r.rating"
     ></app-house>

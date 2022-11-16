@@ -8,11 +8,13 @@ import {Component, Input} from '@angular/core';
 })
 export class HouseComponent {
 
+  @Input() isFavoriteLayout?: boolean
   @Input() id!: number;
   @Input() image = "";
   @Input() country = "";
   @Input() city = "";
   @Input() rating!: number;
+  @Input() data = ""
   @Input() host_type = "";
   @Input() price!: number;
 

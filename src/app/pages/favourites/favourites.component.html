@@ -1,0 +1,17 @@
+<h1>Favoritos</h1>
+<div *ngFor="let c of countries" class="country">
+  <h2>{{c}}</h2>
+  <div *ngFor="let h of houses" class="house">
+    <div *ngIf="h.country===c">
+      <app-house
+        [city]="h.city"
+        [host_type]="h.host_type"
+        [id]="h.id"
+        [image]="h.featured_photo"
+        [isFavoriteLayout]="true"
+        [price]="h.price"
+        [rating]="h.rating"
+      ></app-house>
+    </div>
+  </div>
+</div>
